@@ -1,0 +1,119 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Andada Pro', serif;
+}
+:root {
+  --light-text: rgb(62, 110, 172);
+}
+.container {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  background-color: antiquewhite;
+}
+main {
+  width: 70%;
+  padding: 30px;
+}
+.profile-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.profile-info {
+  text-align: center;
+  margin: auto;
+}
+.profile p {
+  line-height: 1.4em;
+}
+.profile-info h1 {
+  color: midnightblue;
+}
+.profile-info p {
+  color: var(--light-text);
+}
+#profile-img {
+  height: 15%;
+  width: 15%;
+}
+.profile,
+.work-experiences {
+  margin-top: 1rem;
+}
+.profile h2,
+.work-experiences h2,
+.education h2 {
+  text-transform: uppercase;
+  margin: 10px 0px;
+  color: midnightblue;
+}
+.profile h3,
+.work-experiences h3,
+.education h3 {
+  text-transform: uppercase;
+  color: midnightblue;
+}
+.work-experiences span {
+  color: var(--light-text);
+}
+.work-experiences ul {
+  padding: 15px;
+  list-style: none;
+  margin: 0px 10px;
+}
+.work-experiences ul li {
+  margin: 10px 0px;
+}
+.work-experiences-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.education p {
+  margin: 15px 0px;
+}
+hr {
+  background-color: midnightblue;
+  height: 3px;
+  margin-bottom: 15px;
+}
+
+aside {
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: midnightblue;
+  color: aliceblue;
+}
+.contact-info h2,
+.skills h2 {
+  margin: 10px 0px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.contact-info ul {
+  list-style: none;
+}
+.contact-info ul li {
+  padding: 5px;
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+progress {
+  width: 100%;
+}
+label {
+  margin: 10px 0px;
+}
