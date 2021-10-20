@@ -12,7 +12,8 @@
   margin: auto;
   display: flex;
   flex-direction: row;
-  background-color: antiquewhite;
+  background-color: rgb(255, 255, 255);
+  border-left: solid 1px;
 }
 main {
   width: 70%;
@@ -83,7 +84,22 @@ hr {
   height: 3px;
   margin-bottom: 15px;
 }
-
+progress {
+  background-color: #f3f3f3;
+  border: 0;
+  height: 18px;
+  border-radius: 9px;
+}
+progress::-webkit-progress-bar {
+  /* style rules */
+  background-color: #f3f3f3;
+  border: 0;
+  height: 18px;
+}
+progress::-webkit-progress-value {
+  /* style rules */
+  background-color: rgb(61, 61, 61);
+}
 aside {
   width: 30%;
   display: flex;
@@ -91,8 +107,8 @@ aside {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: midnightblue;
-  color: aliceblue;
+  background-color: rgb(236, 236, 236);
+  border-right: 1px solid;
 }
 .contact-info h2,
 .skills h2 {
@@ -116,4 +132,5 @@ progress {
 }
 label {
   margin: 10px 0px;
+  font-weight: bold;
 }
