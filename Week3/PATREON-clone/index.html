@@ -6,28 +6,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
    <!-- Bootstrap Coding Blog Css -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-      <a class="navbar-brand" href="#">Navbar</a>
+  <div class="container-fluid ">
+    <!-- NavBar Start -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white p-2">
+      <a class="navbar-brand" href="#"> <i class="fas fa-grip-lines-vertical"></i> <i class="fas fa-circle"></i></a>
+     <div class="navbar-user"> 
+       <a class="nav-link-gen " href="#">Log In</a>
+      <button type="button" class="create">Create on Patreon</button>
+    </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
     
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+              Product
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-              Dropdown
+              For creators
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#">Action</a>
@@ -37,17 +48,260 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
+            <a class="nav-link" href="#">Pricing</a>
           </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+              Resources
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Starter Kids</a>
+          </li>
+         
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+        
+        <div class="navbar-user-desktop"> 
+          <a class="nav-link-gen " href="#">Log In</a>
+         <button type="button" class="create">Create on Patreon</button>
+       </div> 
+       
+     
       </div>
+
+      <!-- Mobile search section -->
+
+      <div class="search-mobile-wrapper col-12 mx-auto">
+        <i class="fas fa-search"></i>
+        <input class="search-mobile" type="search" placeholder="Find a creator">
+      
+      </div>
+      <!-- Mobile search section -->
     </nav>
+     <!-- NavBar End -->
+
+     <!-- Top Container Start -->
+    <div class="top-container row-fluid bg-black ">
+   <div class="top-wrapper bg-black d-flex flex-wrap justify-content-between col-lg-10 mx-auto">
+    <div class="col-lg-6 col-12 col-sm-6 top-left-block "><h1 class="top-title">Change the way art is valued</h1> 
+      <p>Let your most passionate fans support your creative work via monthly membership.</p> 
+      <button type="button" class="btn btn-danger">Get Started</button>
+    </div>
+    <div class="col-lg-5 col-12 col-sm-6 top-right-block"> 
+      <img class="img-fluid" src="./img/video-thumbnail.gif" alt="videogif">
+    </div>
+   </div>
+    </div>
+     <!-- Top Container End -->
+     
+     <!-- Middle Container Start -->
+     <div class="mid-container col-12 d-flex flex-wrap justify-content-center text-center ">
+       <h1 class="col-10">Search the 200,000+ creators on Patreon</h1>
+       <div class="mid-wrapper col-lg-10 row mx-auto mt-3 ">
+        <div class="mid-search-wrapper mid-search col-11 col-lg-9 mx-auto">
+          <i class="fas fa-search"></i>
+          <input class="search-mobile  " type="search" placeholder="Find a creator you love">
+        </div>
+        <button class="btn btn-search col-lg-1">Search</button>
+       </div>
+     <div class="mid-1 mid-container container d-flex flex-wrap justify-content-center text-center col-lg-7">
+       <h1>What's Patreon?</h1>
+       <p id="mid-p">On Patreon, you can let your fans become active participants in the work they love by offering them a monthly membership.
+          You give them access to exclusive content, community, and insight into your creative process. 
+          In exchange, you get the freedom to do your best work, and the stability you need to build an independent creative career.
+       </p>
+     </div>
+     <div class="patreon-container  d-flex flex-wrap justify-content-center text-center col-lg-10 ">
+       <div class="patreon-introduction int-left col-12 col-sm-6 col-md-6 col-lg-6 text-left">
+         <h4 >Develop a recurring income stream</h4>
+         <p>Stop rolling the dice of ad revenue and per-stream payouts. Get recurring income through monthly payments from your patrons.</p>
+       </div>
+       <div class="patreon-card col-12 col-sm-6 col-md-6 col-lg-6">
+        <img class="img-fluid" src="./img/mikki_kendall.png" alt="mikki_kendall">
+      <div class="card-title-wrapper d-flex flex-wrap ">
+        <div class="patreon-card-title text-left">
+          <h6>Mikki Kendall</h6>
+          <p>Writer</p>
+        </div>
+        <i class="fas fa-chevron-right my-auto fa-2x arrow"></i>
+      </div>
+      <div class="patreon-card-content text-left">
+        <p>The reliable monthly income has made it possible for me to spend less time chasing checks and more time creating.</p>
+      </div>
+       </div>
+
+     <div class="patreon-card-right d-flex flex-wrap">
+      <div class="patreon-card col-12 col-sm-6 col-md-6 col-lg-6">
+        <img class="img-fluid" src="./img/baratunde_thurston.png" alt="baratunde">
+      <div class="card-title-wrapper d-flex flex-wrap ">
+        <div class="patreon-card-title text-left">
+          <h6>Baratunde Thurston</h6>
+          <p>Writer, comedian, commentator</p>
+        </div>
+        <i class="fas fa-chevron-right my-auto fa-2x arrow"></i>
+      </div>
+      <div class="patreon-card-content text-left">
+        <p>"Twenty years into my career, I realize I’ve been scattering my creativity and energy, chasing the approval of algorithms or network executives."</p>
+      </div>
+       </div>
+       <div class="patreon-introduction int-right col-12 col-sm-6 col-md-6 col-lg-6 text-left">
+        <h4 >Take back creative control</h4>
+        <p>Create what you want and what your audience loves. You don’t have to conform to popular taste or the constraints of ad-based monetization models.</p>
+      </div>
+     </div>
+     <div class="patreon-introduction int-left col-12 col-sm-6 col-md-6 col-lg-6 text-left">
+      <h4 >Build a direct, meaningful connection with your audience</h4>
+      <p>No ads, no trolls, no algorithms. Enjoy direct access and deeper conversations with the people who matter the most.</p>
+    </div>
+    <div class="patreon-card col-12 col-sm-6 col-md-6 col-lg-6">
+     <img class="img-fluid" src="./img/heather_mcdonald.png" alt="heather">
+   <div class="card-title-wrapper d-flex flex-wrap ">
+     <div class="patreon-card-title text-left">
+       <h6>Heather McDonald</h6>
+       <p>Juicy Scoop Podcast</p>
+     </div>
+     <i class="fas fa-chevron-right my-auto fa-2x arrow"></i>
+   </div>
+   <div class="patreon-card-content text-left">
+     <p>"With Patreon, it’s not about likes and views, you can really connect with your fans, ignore the haters and focus on the positive.
+        I’d rather have 300 patrons than 3 million Instagram followers."
+     </p>
+   </div>
+    </div>
+     </div>
+     <div class="mid-2 mid-container container d-flex flex-wrap justify-content-center text-center">
+      <h1 id="patreon-title">Who uses Patreon?</h1>
+      <p id="patreon-p">If you’re ready to take your work to the next level and willing to open your heart to your audience, Patreon is for you.
+      </p>
+    </div>
+
+    <div class="mid-container plist-wrapper col-lg-10">
+      <div class="p-image col-lg-6">
+        <img class="img-fluid" src="./img/writers.png" alt="heather">
+      </div>
+        <ul class="p-list col-lg-6 text-left">
+          <li>Podcasters</li>
+          <li>Video Creators</li>
+          <li>Musicians</li>
+          <li>Visual Artists</li>
+          <li>Communities</li>
+          <li>Writers & Journalists</li>
+          <li>Gaming Creators</li>
+          <li>Nonprofits</li>
+          <li>Tutorials and Education</li>
+          <li>Creators-of-all-kinds</li>
+        </ul>
+    </div>
+    <div class="mid-3 text-center">
+      <h1>It’s easier than you think</h1>
+      <p>There are many ways to delight your fans and every creator can find their own.</p>
+      <img class="img-fluid creator-img col-12 col-lg-10 " src="./img/CreatorProfile-EN.jpg" alt="Carlos">
+    </div>
+
+    <div class="mid-3 text-center col-10 col-sm-12 col-lg-12">
+      <h1>See how other creators use Patreon</h1>
+    </div>
+    <!-- Card Section Start -->
+    <div class="card-wrapper container row">
+      <div class="f-card col-12 col-sm-12 col-md-4 col-lg-4 text-left">
+        <img class="img-fluid" src="./img/is-patreon-right-for-you_2x.jpg" alt="">
+        <h4 class="my-3">Is Patreon Right For You And Your Business?</h4>
+        <p>In this article, we want to introduce you to the membership model—an effective, field-tested way for independent creators...</p>
+        <span>Read More</span>
+      </div>
+
+      <div class="f-card col-12 col-sm-12 col-md-4 col-lg-4 text-left">
+        <img class="img-fluid" src="./img/6-membership-based-business_2x.jpg" alt="">
+        <h4 class="my-3 ">6 Membership-based Business Models You Can Use On Patreon Today</h4>
+        <p>If you’ve looked at what other creators are doing on Patreon, it can be daunting to see how many different ways they leverage...</p>
+        <span>Read More</span>
+      </div>
+
+      <div class="f-card col-12 col-sm-12 col-md-4 col-lg-4 text-left">
+        <img class="img-fluid" src="./img/20-most-useful_2x.jpg" alt="">
+        <h4 class="my-3 ">The 20 Most Useful Patreon Features & Integrations</h4>
+        <p>As a creator, it's easy to feel like there just aren't enough hours in the day. Whether you're working on your project part time...</p>
+        <span>Read More</span>
+      </div>
+    </div>
+     <!-- Card Section End -->
+     </div>
+     <div class="mid-bottom text-center">
+      <div class="mid-bottom-wrapper">
+        <h1>Are you ready to take back control?</h1>
+        <button class="btn-getstarted  ">Get Started</button>
+      </div>
+    </div>
+      <!-- Middle Container End -->
+      <div class="footer-container container-fluid bg-black">
+      <div class=" container-fluid col-lg-10 mx-auto">
+        <div class="footer-top-list d-flex flex-wrap">
+          <ul class="fcol-1 order-1 order-lg-1 col-md-3 col-6 col-lg-2">
+            <li class="first">Language: English (United States)</li>
+            <li class="first">Netherland</li>
+            <li class="first">Currency: USD</li>
+          </ul>
+         <div class=" order-3 footer-group col-11 col-lg-10 d-flex flex-wrap justify-content-between">
+          <ul class="fcol-2 col-6 col-lg-3 ">
+            <h6>PRODUCT</h5>
+            <li>Lite</li>
+            <li>Pro</li>
+            <li>Premium</li>
+            <li>Pricing</li>
+          </ul>
+          <ul class="fcol-3 col-6 col-lg-3">
+            <h6>FOR CREATORS</h6>
+            <li>Podcasters</li>
+            <li>Video Creators</li>
+            <li>Musicians</li>
+            <li>Visual Artists</li>
+            <li>Writers & Journalists</li>
+            <li>Communities</li>
+            <li>Gaming Creators</li>
+            <li>Nonprofits</li>
+            <li>Tutorials and Education</li>
+            <li>Local Businesses</li>
+            <li>Creators-of-all-kinds</li>
+          </ul>
+          <ul class="fcol-4 col-6 col-lg-3">
+            <h6>RESOURCES</h6>
+            <li>Blog</li>
+            <li>Patreon U</li>
+            <li>Creator Community</li>
+            <li>Help Center & FAQ</li>
+            <li>App Directory</li>
+            <li>Developers</li>
+          </ul>
+          <ul class="fcol-5 col-6 col-lg-3">
+            <h6>COMPANY</h6>
+            <li>About</li>
+            <li>Press</li>
+            <li>Careers</li>
+            <li>Privacy</li>
+            <li>Policy & Terms</li>
+            <li>Privacy Preferences</li>
+            <li>Accessibility</li>
+            <li>Impressum</li>
+          </ul>
+
+         </div>
+         <div class="social-icons order-2 order-lg-3">
+          <i class="fab fa-twitter b-circle"></i>
+          <i class="fab fa-facebook-f b-circle"></i>
+          <i class="fab fa-instagram b-circle"></i>
+          <i class="fab fa-youtube b-circle"></i>
+        </div>
+        </div>
+       
+      </div>
+      </div>
   </div>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium blanditiis architecto pariatur eveniet expedita. Repellendus optio, fugit voluptatem voluptas alias impedit, est consequuntur, dicta cupiditate molestiae quam hic! Dolore, nihil?</p>
   
   <!-- Bootstrap Coding Blog Js-->
 
