@@ -1,4 +1,4 @@
-/* Copied to the original web site */
+/* root colors Copied from the original web site */
 :root {
   --color-coral: #ff424d;
   --color-blue: #006db9;
@@ -72,6 +72,17 @@ nav {
 }
 .navbar-user {
   display: none;
+}
+.navbar-user-desktop {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 1rem;
+}
+.navbar-user-desktop a {
+  margin-right: 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 .top-container {
   margin-top: 3.8rem;
@@ -356,18 +367,107 @@ select:focus {
     font-size: 2.5rem;
   }
 }
+/* TABLET*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar-user-desktop {
+    display: none;
+  }
+  .search-wrapper-d {
+    display: none;
+  }
+  .navbar-user {
+    display: block;
+    margin-left: auto;
+    margin-right: 1rem;
+  }
+  .nav-link-gen {
+    margin-right: 1rem;
+  }
+  .search-mobile-wrapper {
+    display: flex;
+    background-color: var(--color-gray5);
+    align-items: center;
+    border-radius: 9999px;
+    height: 35px;
+    margin: 0.7rem 0px;
+  }
+  .top-wrapper {
+    padding: 8rem 2rem 15rem 2rem;
+  }
+  .top-title {
+    font-size: 3.6rem;
+  }
+  .top-left-block p {
+    font-size: 1.3rem;
+  }
+  .mid-container h1 {
+    margin-top: 2rem;
+  }
+  .btn-danger,
+  .btn-search {
+    margin-top: 1rem;
+    border-radius: 9999px;
+    padding: 0.7rem 2rem;
+  }
+  .btn-search {
+    margin-top: 2rem;
+    height: 45px;
+    color: var(--color-white);
+  }
+  #mid-p {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+  }
+  .patreon-introduction h4 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  #patreon-p {
+    font-size: 1.3rem;
+    line-height: 3rem;
+  }
+  .p-image {
+    margin-top: 8rem;
+  }
+  .p-list {
+    margin-top: -2rem;
+  }
+  .p-list li {
+    margin: 0.5rem;
+  }
+  .mid-3 p {
+    font-size: 1.3rem;
+    margin: 1rem 1rem 5rem 1rem;
+  }
+  .mid-3-tablet {
+    margin-top: 10rem;
+  }
+  .card-wrapper {
+    margin: 3rem 0px 6rem 0px;
+  }
+  .f-card h4 {
+    font-size: 1.2rem;
+  }
+  .mid-bottom-wrapper h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    width: 90%;
+  }
+}
 
 /* MOBILE*/
 @media (max-width: 767px) {
-  .navbar-user,
-  .navbar-user-desktop {
+  .navbar-user {
     display: flex;
     align-items: center;
     margin-left: auto;
     margin-right: 1rem;
   }
-  .navbar-user a,
-  .navbar-user-desktop a {
+  .navbar-user-desktop {
+    display: none;
+  }
+  .navbar-user a {
     margin-right: 1rem;
     font-size: 0.9rem;
     font-weight: 500;
@@ -521,7 +621,4 @@ select:focus {
   .footer-group ul li:hover {
     text-decoration: underline;
   }
-}
-/* TABLET*/
-@media (min-width: 768px) and (max-width: 1024px) {
 }
