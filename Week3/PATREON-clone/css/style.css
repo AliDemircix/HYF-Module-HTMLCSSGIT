@@ -73,6 +73,9 @@ nav {
 .navbar-user {
   display: none;
 }
+.top-container {
+  margin-top: 3.8rem;
+}
 .top-wrapper {
   padding: 2rem;
   margin-top: 1rem;
@@ -87,9 +90,7 @@ nav {
   padding-bottom: 1rem;
   letter-spacing: 0.1rem;
 }
-.top-container {
-  margin-top: 3.8rem;
-}
+
 .search-mobile-wrapper {
   display: none;
 }
@@ -119,6 +120,10 @@ nav {
   background: transparent;
   margin: 0px 1rem;
 }
+.nav-link {
+  color: #000000;
+  font-weight: 500;
+}
 .nav-link-gen {
   color: #141518;
 }
@@ -128,6 +133,9 @@ nav {
 .btn-search {
   background-color: var(--color-primary);
   height: 35px;
+}
+.btn-search:hover {
+  color: white;
 }
 .mid-container {
   padding: 2.6rem 1rem;
@@ -156,11 +164,6 @@ textarea:focus,
 select:focus {
   outline: none;
 }
-.plist-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
 
 .p-list li {
   font-size: 1.7rem;
@@ -169,6 +172,7 @@ select:focus {
 }
 .p-list li:hover {
   text-decoration: underline;
+  color: #000000;
 }
 .f-card p {
   color: rgb(112, 108, 100);
@@ -232,7 +236,7 @@ select:focus {
   font-weight: bold;
   text-align: center;
 }
-.netherlands-flag {
+.nl-flag {
   width: 20px;
   height: 14px;
 }
@@ -249,26 +253,43 @@ select:focus {
   .top-left-block p {
     font-size: 1.2rem;
   }
+  .header-img:hover {
+    transition: all 0.5s;
+    transform: scale(1.05);
+  }
   .btn-danger {
     margin: 1rem 0px;
     border-radius: 9999px;
     padding: 0.5rem 1.5rem;
   }
-  .mid-container h1 {
-    margin-top: 4rem;
-    font-weight: 700;
-    font-size: 2.7rem;
-  }
+
   .btn-search {
     border-radius: 9999px;
     height: 50px;
-    padding: 0.5rem 2rem;
+    padding: 0px 1rem;
+
     color: var(--color-white);
     font-size: 1.1rem;
+  }
+  .search-wrapper-d {
+    display: flex;
+    background-color: var(--color-gray5);
+    align-items: center;
+    border-radius: 9999px;
+    height: 35px;
+    margin: 0.7rem 0px;
+  }
+  .search-d {
+    display: block;
+    width: 100%;
+    background: transparent;
+    position: relative;
+    border: solid 0px;
   }
   .search-mobile {
     width: 100%;
   }
+
   .search-mobile::placeholder {
     font-weight: 500;
     font-size: 1.2rem;
@@ -276,13 +297,63 @@ select:focus {
   .fa-search {
     opacity: 0.5;
   }
-  .mid-container h1 {
-    margin-top: 3rem;
-  }
+
   #mid-p {
     margin-top: 1rem;
     font-size: 1.3rem;
     line-height: 2.5rem;
+  }
+  .patreon-container {
+    margin-top: 2.2rem;
+  }
+  .patreon-introduction h4 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .patreon-card-title:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--color-primary);
+  }
+  .patreon-card-title h6 {
+    margin-top: 1rem;
+    font-weight: 700;
+  }
+  #patreon-title {
+    margin-top: 6rem;
+  }
+  #patreon-p {
+    font-size: 1.3rem;
+    line-height: 3rem;
+  }
+  .arrow {
+    margin-left: 0.8rem;
+  }
+  .p-list li {
+    margin: 0.5rem;
+  }
+  .p-image {
+    margin-top: 5rem;
+  }
+  .mid-container {
+    padding: 1rem 0rem;
+  }
+  .mid-container h1 {
+    font-weight: 700;
+    font-size: 2.7rem;
+    margin-top: 4rem;
+  }
+  .mid-3-wrapper {
+    margin-top: 6rem;
+  }
+  .mid-3 p {
+    font-size: 1.3rem;
+    margin: 1rem 0px 4rem 0px;
+  }
+  .mid-3-h1 {
+    padding: 6rem 0px 1.5rem 0px;
+  }
+  .mid-bottom-wrapper h1 {
+    font-size: 2.5rem;
   }
 }
 
@@ -303,6 +374,9 @@ select:focus {
   }
 
   .search {
+    display: none;
+  }
+  .search-wrapper-d {
     display: none;
   }
   .search-mobile-wrapper {
@@ -347,7 +421,7 @@ select:focus {
     margin-bottom: 5rem;
   }
   .mid-wrapper {
-    margin: 3.2rem 0px;
+    margin: 3.2rem 1rem;
   }
   .mid-search,
   .btn-search {
@@ -362,6 +436,9 @@ select:focus {
     color: var(--color-white);
     font-size: 1.1rem;
     margin-left: 1rem;
+  }
+  .mid-container h1 {
+    margin-top: 3rem;
   }
   #mid-p,
   #patreon-p {
@@ -424,7 +501,7 @@ select:focus {
     cursor: pointer;
   }
   .mid-3 h1 {
-    padding: 8rem 0px 1.5rem 0px;
+    padding: 10rem 0px 1.5rem 0px;
   }
   .mid-3 p {
     font-size: 1.2rem;
@@ -444,4 +521,7 @@ select:focus {
   .footer-group ul li:hover {
     text-decoration: underline;
   }
+}
+/* TABLET*/
+@media (min-width: 768px) and (max-width: 1024px) {
 }
