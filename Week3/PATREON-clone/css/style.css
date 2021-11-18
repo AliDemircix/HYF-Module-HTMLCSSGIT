@@ -184,6 +184,7 @@ select:focus {
 .p-list li:hover {
   text-decoration: underline;
   color: #000000;
+  cursor: pointer;
 }
 .f-card p {
   color: rgb(112, 108, 100);
